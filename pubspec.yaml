@@ -29,6 +29,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http:
+  cached_network_image: 
+  pull_to_refresh: 
+  lazy_loading_list: 
 
 
   # The following adds the Cupertino Icons font to your application.
