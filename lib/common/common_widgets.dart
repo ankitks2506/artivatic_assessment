@@ -22,7 +22,15 @@ Widget contents(
                   imageUrl: url,
                   placeholder: (context, url) =>
                       const CircularProgressIndicator(),
-                  errorWidget: (context, url, error) => const Icon(Icons.error),
+                  errorWidget: (context, url, error) => const Center(
+                    child: Text(
+                      "Failed to load image. Please check the Url",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
                 ),
               )
             : const Padding(
